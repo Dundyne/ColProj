@@ -1,0 +1,16 @@
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.exe
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.deps.json
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.runtimeconfig.json
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.runtimeconfig.dev.json
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\HailMary.pdb
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\WebUwp.Core.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\WebUwp.Core.pdb
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.csprojAssemblyReference.cache
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.AssemblyInfoInputs.cache
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.AssemblyInfo.cs
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.csproj.CopyComplete
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\obj\Debug\netcoreapp3.1\HailMary.pdb
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\HailMary\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

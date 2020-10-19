@@ -1,0 +1,8 @@
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\bin\Debug\netstandard2.0\WebUwp.Core.deps.json
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\bin\Debug\netstandard2.0\WebUwp.Core.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\bin\Debug\netstandard2.0\WebUwp.Core.pdb
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\obj\Debug\netstandard2.0\WebUwp.Core.csprojAssemblyReference.cache
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\obj\Debug\netstandard2.0\WebUwp.Core.AssemblyInfoInputs.cache
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\obj\Debug\netstandard2.0\WebUwp.Core.AssemblyInfo.cs
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\obj\Debug\netstandard2.0\WebUwp.Core.dll
+C:\Users\Henri\Documents\GitHub\ColProj\ColProj\WebUwp.Core\obj\Debug\netstandard2.0\WebUwp.Core.pdb

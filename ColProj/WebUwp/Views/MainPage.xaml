@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="WebUwp.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock Text="Login" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBox x:Name="Username" Header="Username" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber" TextChanged="Username_TextChanged" />
+        <PasswordBox x:Name="Password" Header="Password" PlaceholderText="Password" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="Password" PasswordChanged="Password_PasswordChanged" />
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Login" Margin="0,24" Click="LoginButton_Click"/>
+            <Button Content="Register" Margin="24" Click="RegisterButton_Click"/>
+            <TextBlock x:Name="ExceptionBlock"></TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Page>
+<!--<Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <PasswordBox x:Name="LoginPassword" HorizontalAlignment="Center" Margin="0,467,0,0" VerticalAlignment="Top" Width="150" Password="Password"/>
+            <TextBox x:Name="LoginUsername" HorizontalAlignment="Center" Margin="0,416,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <Button x:Name="LoginBtn" Content="Login" Margin="652,520,0,0" VerticalAlignment="Top" Width="73" Click="LoginBtn_Click"/>
+            <Button x:Name="RegisterBtn" Content="Register" Margin="730,520,0,0" VerticalAlignment="Top" Width="70" Click="RegisterBtn_Click"/>
+            <TextBox x:Name="ReturnData" HorizontalAlignment="Center" Margin="0,309,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" TextChanged="ReturnData_TextChanged"/>
+            
+                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.
+            
+        </Grid>
+    </Grid>-->

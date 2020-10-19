@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="WebUwp.Views.JoinCollectivePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock Text="Join a Collective" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBox x:Name="CollectiveID" Header="Collective ID" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="Number" TextChanged="CollectiveID_TextChanged" />
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Join" Margin="0,24" Click="JoinCollective_Click"/>
+            <Button Content="Cancel" Margin="24" Click="Cancel_Click"/>
+            <TextBlock x:Name="ExceptionBlock"></TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Page>

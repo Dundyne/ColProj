@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="WebUwp.Views.UpdateUserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock Text="Update User" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBox x:Name="FirstName" Header= "First Name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber" TextChanged="FirstName_TextChanged" />
+        <TextBox x:Name="LastName" Header="Last Name" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber" TextChanged="LastName_TextChanged" />
+        <TextBox x:Name="Username" Header="Username" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber" TextChanged="Username_TextChanged" />
+        <PasswordBox x:Name="Password" Header="Password" PlaceholderText="Password" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="Password" PasswordChanged="Password_PasswordChanged" />
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Save" Margin="0,24" Click="SaveButton_Click"/>
+            <Button Content="Cancel" Margin="24" Click="CancelButton_Click"/>
+            <TextBlock x:Name="ExceptionBlock"></TextBlock>
+        </StackPanel>
+    </StackPanel>
+
+
+</Page>

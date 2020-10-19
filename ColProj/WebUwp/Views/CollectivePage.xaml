@@ -1,0 +1,83 @@
+﻿<Page
+    x:Class="WebUwp.Views.CollectivePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebUwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Core.model="using:WebUwp.Core.Models"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <DataTemplate x:Key="UserListViewTemplate" x:DataType="Core.model:User">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="1"
+                    Text="{x:Bind Username}"
+                    x:Phase="1"
+                    Style="{ThemeResource BaseTextBlockStyle}"
+                    Margin="12,6,0,0"/>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="PostListViewTemplate" x:DataType="Core.model:Post">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1"
+                    Text="{x:Bind Title}"
+                    x:Phase="1"
+                    Style="{ThemeResource BaseTextBlockStyle}"
+                    Margin="12,6,0,0"/>
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock x:Name="Welcome" Text="Welcome" Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Orientation="Horizontal">
+            <ListView
+    Header="Users"
+    ItemsSource="{x:Bind ViewModel.Users, Mode=OneWay}" 
+    x:Name="UserList"
+    ItemTemplate="{StaticResource UserListViewTemplate}"
+    BorderThickness="1"
+    BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"
+    Width="350" 
+    Height="400"
+    HorizontalAlignment="Left"/>
+            <ListView
+    Header="Posts"
+    ItemsSource="{x:Bind ViewModel.Posts, Mode=OneWay}" 
+    x:Name="PostsList"
+    ItemTemplate="{StaticResource PostListViewTemplate}"
+    BorderThickness="1"
+    BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"
+    Width="350" 
+    Height="400"
+    HorizontalAlignment="Left" SelectionChanged="PostsList_SelectionChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Back" Margin="24" Click="Back_Click"/>
+            <Button Content="Create Post" Margin="24" Click="CreatePost_Click"/>
+            <Button Content="Open Post" Margin="24" Click="OpenPost_Click"/>
+            <Button Content="Delete Post" Margin="24" Click="DeletePost_Click"/>
+            <TextBlock x:Name="ExceptionBlock"></TextBlock>
+        </StackPanel>
+
+    </StackPanel>
+</Page>

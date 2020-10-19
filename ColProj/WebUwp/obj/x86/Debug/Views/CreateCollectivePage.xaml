@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="WebUwp.Views.CreateCollectivePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock Text="Create a Collective" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBox x:ConnectionId='2' x:Name="Name" Header="Name" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber"                                />
+        <TextBox x:ConnectionId='3' x:Name="Description" Header="Description" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="NameOrPhoneNumber"                                       />
+        <ComboBox x:ConnectionId='4' x:Name="Size" Header="Size" PlaceholderText="Pick a collective size" Width="200"                                         >
+            <x:Int32>2</x:Int32>
+            <x:Int32>3</x:Int32>
+            <x:Int32>4</x:Int32>
+            <x:Int32>5</x:Int32>
+            <x:Int32>6</x:Int32>
+            <x:Int32>7</x:Int32>
+            <x:Int32>8</x:Int32>
+            <x:Int32>9</x:Int32>
+            <x:Int32>10</x:Int32>
+            <x:Int32>11</x:Int32>
+            <x:Int32>12</x:Int32>
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:ConnectionId='5' Content="Create" Margin="0,24"                               />
+            <Button x:ConnectionId='6' Content="Cancel" Margin="24"                     />
+            <TextBlock x:ConnectionId='7' x:Name="ExceptionBlock"></TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Page>
+

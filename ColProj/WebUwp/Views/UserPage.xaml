@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="WebUwp.Views.UserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebUwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel Margin="20,0,0,0">
+        <TextBlock x:Name="Welcome" Text="Welcome" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBlock x:Name="UserId" Text="userid" Style="{StaticResource SubtitleTextBlockStyle}" />
+        <TextBlock x:Name="FirstName" Text="firstname" Style="{StaticResource SubtitleTextBlockStyle}" />
+        <TextBlock x:Name="LastName" Text="lastname" Style="{StaticResource SubtitleTextBlockStyle}" />
+        <TextBlock x:Name="Username" Text="username" Style="{StaticResource SubtitleTextBlockStyle}" />
+        <TextBlock x:Name="ExceptionBlock"></TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Create Collective" Margin="0,24" Click="CreateCollective_Click"/>
+            <Button Content="Join Collective" Margin="0,24" Click="JoinCollective_Click"/>
+            <Button Content="Your Collectives" Margin="0,24" Click="YourCollectives_Click"/>
+            <Button Content="Update User" Margin="0,24" Click="UpdateUser_Click"/>
+            <Button Content="Logout" Margin="0,24" Click="Logout_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
