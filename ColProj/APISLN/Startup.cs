@@ -45,7 +45,7 @@ namespace WebApi
 
 
             services.AddDbContext<DataContext>(options =>
-        options.UseSqlServer(donau));
+        options.UseSqlServer(localdb));
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
